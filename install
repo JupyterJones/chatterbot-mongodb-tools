@@ -1,0 +1,3056 @@
+Script started on 2022-02-05 13:40:03+08:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="123" LINES="28"]
+(base) ]0;jack@jack-desktop: ~/Desktop/ChatterBot-Stuff[01;32mjack@jack-desktop[00m:[01;34m~/Desktop/ChatterBot-Stuff[00m$ code .python app.py[7Pcode .[Kcode .python app.pyip install --upgrade --force-reinstall ruamel-yamldeeppavlov[K[9Python app.pyls[Kpip install -r requirements.txt[9Pdeeppavlov[9Python app.pycd 81-bert-qna0-bert-qna..[Kpython app.pyfalcon.App.py[Kpython app.pyip install transformers[11Python app.pyip install falcon[5Python app.pyip install falcon[5Python app.pyip install transformers[11Python app.pyip install transformers[11Python app.pyip install falcon[5Python app.pyls[Kcd 80-bert-server..[Knode 02-export-import.js[2P1-basic-usage.jscd examples/08-neural-network[9P08-neural-networkthunar[Kcd ChatterBot-Stuffgit clone git@github.com:JupyterJones/ChatterBot-Stuff.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ChatterBot-Stuff[Kgit clone git@github.com:JupyterJones/ChatterBot-Stuff.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[35Pdocker rmi cc8c62f3d7cbgit clone git@github.com:JupyterJones/ChatterBot-Stuff.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ChatterBot-Stuff[K[1@p[1@i[1@p[1@ [1@i[1@n[1@s[1@t[1@a[1@l[1@l[1P[1P ChatterBot-Stuff[C ChatterBot-Stuffc ChatterBot-Stuff[1PChatterBot-Stuff[1PhatterBot-Stuff[C[C[C[C[C[CbBot-Stuff[1Pot-Stuff[C[C[1PStuff[1Ptuff[1Puff[1Pff[C[K[K
+Collecting chatterbot
+  Using cached ChatterBot-1.0.5-py2.py3-none-any.whl (67 kB)
+Processing /home/jack/.cache/pip/wheels/55/40/9f/027c3d94280ce2b7c2c107cb563a433e6572f830a5462231ae/PyYAML-5.1.2-cp38-cp38-linux_x86_64.whl
+Processing /home/jack/.cache/pip/wheels/50/c2/73/989e659e83b30a74acdfcb825e632b1a7dc12f39d58fe37dd6/spacy-2.1.9-cp38-cp38-linux_x86_64.whl
+Requirement already satisfied: nltk<4.0,>=3.2 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from chatterbot) (3.5)
+Collecting mathparse<0.2,>=0.1
+  Using cached mathparse-0.1.2-py3-none-any.whl (7.2 kB)
+Collecting python-dateutil<2.8,>=2.7
+  Using cached python_dateutil-2.7.5-py2.py3-none-any.whl (225 kB)
+Processing /home/jack/.cache/pip/wheels/0d/13/f8/47c2f3157957c3693caffa64a94a718cb1357fe186e4d52e48/SQLAlchemy-1.2.19-cp38-cp38-linux_x86_64.whl
+Requirement already satisfied: pytz in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from chatterbot) (2019.1)
+Collecting pymongo<4.0,>=3.3
+  Using cached pymongo-3.12.3-cp38-cp38-manylinux2014_x86_64.whl (546 kB)
+Collecting pint>=0.8.1
+  Using cached Pint-0.18-py2.py3-none-any.whl (209 kB)
+Collecting cymem<2.1.0,>=2.0.2
+  Using cached cymem-2.0.6-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36 kB)
+Requirement already satisfied: requests<3.0.0,>=2.13.0 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from spacy<2.2,>=2.1->chatterbot) (2.18.4)
+Collecting wasabi<1.1.0,>=0.2.0
+  Using cached wasabi-0.9.0-py3-none-any.whl (25 kB)
+Requirement already satisfied: numpy>=1.15.0 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from spacy<2.2,>=2.1->chatterbot) (1.18.0)
+Processing /home/jack/.cache/pip/wheels/eb/c3/92/dd0802ed4a0b14a1534ab4f38d05578d7fa73e8445f3e9d2f2/blis-0.2.4-cp38-cp38-linux_x86_64.whl
+Collecting murmurhash<1.1.0,>=0.28.0
+  Using cached murmurhash-1.0.6-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (21 kB)
+Processing /home/jack/.cache/pip/wheels/f4/5b/cc/8a96be826c5d22ca28e3c30f785b22edc57ffb2d349fa780be/thinc-7.0.8-cp38-cp38-linux_x86_64.whl
+Processing /home/jack/.cache/pip/wheels/5a/d0/29/7f6993a759349eae3d0ecca7e2fbc88acdd8650b25e6c6ad8a/preshed-2.0.1-cp38-cp38-linux_x86_64.whl
+Collecting plac<1.0.0,>=0.9.6
+  Using cached plac-0.9.6-py2.py3-none-any.whl (20 kB)
+Collecting srsly<1.1.0,>=0.0.6
+  Using cached srsly-1.0.5-cp38-cp38-manylinux2014_x86_64.whl (186 kB)
+Requirement already satisfied: joblib in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from nltk<4.0,>=3.2->chatterbot) (0.17.0)
+Requirement already satisfied: regex in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from nltk<4.0,>=3.2->chatterbot) (2020.10.15)
+Requirement already satisfied: click in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from nltk<4.0,>=3.2->chatterbot) (7.1.2)
+Requirement already satisfied: tqdm in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from nltk<4.0,>=3.2->chatterbot) (4.41.1)
+Requirement already satisfied: six>=1.5 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from python-dateutil<2.8,>=2.7->chatterbot) (1.15.0)
+Requirement already satisfied: packaging in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from pint>=0.8.1->chatterbot) (20.4)
+Collecting urllib3<1.23,>=1.21.1
+  Using cached urllib3-1.22-py2.py3-none-any.whl (132 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from requests<3.0.0,>=2.13.0->spacy<2.2,>=2.1->chatterbot) (2021.10.8)
+Requirement already satisfied: idna<2.7,>=2.5 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from requests<3.0.0,>=2.13.0->spacy<2.2,>=2.1->chatterbot) (2.6)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from requests<3.0.0,>=2.13.0->spacy<2.2,>=2.1->chatterbot) (3.0.4)
+Requirement already satisfied: pyparsing>=2.0.2 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/lib/python3.8/site-packages (from packaging->pint>=0.8.1->chatterbot) (2.4.7)
+Installing collected packages: pyyaml, cymem, wasabi, blis, murmurhash, preshed, plac, srsly, thinc, spacy, mathparse, python-dateutil, sqlalchemy, pymongo, pint, chatterbot, urllib3
+  Attempting uninstall: pyyaml
+    Found existing installation: PyYAML 5.3.1
+[31mERROR: Cannot uninstall 'PyYAML'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.[0m
+(base) ]0;jack@jack-desktop: ~/Desktop/ChatterBot-Stuff[01;32mjack@jack-desktop[00m:[01;34m~/Desktop/ChatterBot-Stuff[00m$ conda activate py2
+(py2) ]0;jack@jack-desktop: ~/Desktop/ChatterBot-Stuff[01;32mjack@jack-desktop[00m:[01;34m~/Desktop/ChatterBot-Stuff[00m$ conda activate py2pip install chatterbot
+[33mDEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support[0m
+Collecting chatterbot
+  Using cached https://files.pythonhosted.org/packages/6c/0e/dac0d82f34f86bf509cf5ef3e2dfc5aa7d444bd843a2330ceb7d854f84f2/ChatterBot-1.0.5-py2.py3-none-any.whl
+Processing /home/jack/.cache/pip/wheels/ae/8c/3f/b1fe0ba04555b08b57ab52ab7f86023639a526d8bc8d384306/nltk-3.5-cp27-none-any.whl
+Processing /home/jack/.cache/pip/wheels/2c/90/a7/3b40c6cc468abff357b38fd075429920bd0d313659d889cf8a/SQLAlchemy-1.2.19-cp27-cp27mu-linux_x86_64.whl
+Requirement already satisfied: pytz in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/lib/python2.7/site-packages (from chatterbot) (2020.1)
+Collecting python-dateutil<2.8,>=2.7
+  Using cached https://files.pythonhosted.org/packages/74/68/d87d9b36af36f44254a8d512cbfc48369103a3b9e474be9bdfe536abfc45/python_dateutil-2.7.5-py2.py3-none-any.whl
+Processing /home/jack/.cache/pip/wheels/d9/45/dd/65f0b38450c47cf7e5312883deb97d065e030c5cca0a365030/PyYAML-5.1.2-cp27-cp27mu-linux_x86_64.whl
+Collecting spacy<2.2,>=2.1
+  Using cached https://files.pythonhosted.org/packages/44/bf/b6209aa270b984248bd42e1249c932fb6f3ea47a74dc8ccd11933ba778d2/spacy-2.1.9-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting pymongo<4.0,>=3.3
+  Using cached https://files.pythonhosted.org/packages/fc/c7/fdcd1e724029f6d053856e4ce2fef3fd7b6a9e962585177a56da3a5829fc/pymongo-3.12.3-cp27-cp27mu-manylinux1_x86_64.whl
+Processing /home/jack/.cache/pip/wheels/79/b8/70/c5fd24edaf915485cf58fd74feaae6ce46e553a6656182310c/mathparse-0.1.2-cp27-none-any.whl
+Collecting pint>=0.8.1
+  Using cached https://files.pythonhosted.org/packages/15/9d/bf177ebbc57d25e9e296addc14a1303d1e34d7964af5df428a8332349c42/Pint-0.9-py2.py3-none-any.whl
+Requirement already satisfied: tqdm in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/lib/python2.7/site-packages (from nltk<4.0,>=3.2->chatterbot) (4.62.3)
+Collecting regex
+  Using cached https://files.pythonhosted.org/packages/4c/75/b5b60055897d78882da8bc4c94609067cf531a42726df2e44ce69e8ec7a9/regex-2022.1.18.tar.gz
+Requirement already satisfied: click in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/lib/python2.7/site-packages (from nltk<4.0,>=3.2->chatterbot) (7.1.2)
+Requirement already satisfied: joblib in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/lib/python2.7/site-packages (from nltk<4.0,>=3.2->chatterbot) (0.14.1)
+Requirement already satisfied: six>=1.5 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/lib/python2.7/site-packages (from python-dateutil<2.8,>=2.7->chatterbot) (1.15.0)
+Processing /home/jack/.cache/pip/wheels/14/9a/71/d8e33ac897c5ae4a2536027fa88e22114fa2e917361fb20507/srsly-1.0.5-cp27-cp27mu-linux_x86_64.whl
+Processing /home/jack/.cache/pip/wheels/f9/b2/4a/68efdfe5093638a9918bd1bb734af625526e849487200aa171/pathlib-1.0.1-cp27-none-any.whl
+Collecting blis<0.3.0,>=0.2.2
+  Using cached https://files.pythonhosted.org/packages/61/b7/6f32b1e2506937525802d94136eb73dec2cacd4a21c9bec9c90549e2b413/blis-0.2.4-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting plac<1.0.0,>=0.9.6
+  Using cached https://files.pythonhosted.org/packages/9e/9b/62c60d2f5bc135d2aa1d8c8a86aaf84edb719a59c7f11a4316259e61a298/plac-0.9.6-py2.py3-none-any.whl
+Processing /home/jack/.cache/pip/wheels/cb/cd/70/242e86c77f1307122b7a07b33d862306aeb2826bb4e1609d22/wasabi-0.9.0-cp27-none-any.whl
+Requirement already satisfied: numpy>=1.15.0 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/lib/python2.7/site-packages (from spacy<2.2,>=2.1->chatterbot) (1.16.6)
+Processing /home/jack/.cache/pip/wheels/be/88/02/ecd6fe769a5355d8f883ea04ea8a62162e8ee482292ab6566b/murmurhash-1.0.6-cp27-cp27mu-linux_x86_64.whl
+Collecting requests<3.0.0,>=2.13.0
+  Using cached https://files.pythonhosted.org/packages/2d/61/08076519c80041bc0ffa1a8af0cbd3bf3e2b62af10435d269a9d0f40564d/requests-2.27.1-py2.py3-none-any.whl
+Collecting thinc<7.1.0,>=7.0.8
+  Using cached https://files.pythonhosted.org/packages/c4/d9/944e0d409e8af994d8d09268a3b7fb9eacbdd08f9bc72b9b0b66c405c05a/thinc-7.0.8-cp27-cp27mu-manylinux1_x86_64.whl
+Processing /home/jack/.cache/pip/wheels/61/f8/30/d3c9c332b5706d1adc34b4a4501e9b85c0d29b3ae03166fc97/cymem-2.0.6-cp27-cp27mu-linux_x86_64.whl
+Collecting preshed<2.1.0,>=2.0.1
+  Using cached https://files.pythonhosted.org/packages/25/b1/9098d07e70b960001a8a9b99435c6987006d0d7bcbf20523adce9272f66e/preshed-2.0.1-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting funcsigs; python_version == "2.7"
+  Using cached https://files.pythonhosted.org/packages/69/cb/f5be453359271714c01b9bd06126eaf2e368f1fddfff30818754b5ac2328/funcsigs-1.0.2-py2.py3-none-any.whl
+Collecting idna<3,>=2.5; python_version < "3"
+  Using cached https://files.pythonhosted.org/packages/a2/38/928ddce2273eaa564f6f50de919327bf3a00f091b5baba8dfa9460f3a8a8/idna-2.10-py2.py3-none-any.whl
+Collecting chardet<5,>=3.0.2; python_version < "3"
+  Using cached https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl
+Collecting urllib3<1.27,>=1.21.1
+  Using cached https://files.pythonhosted.org/packages/4e/b8/f5a25b22e803f0578e668daa33ba3701bb37858ec80e08a150bd7d2cf1b1/urllib3-1.26.8-py2.py3-none-any.whl
+Requirement already satisfied: certifi>=2017.4.17 in /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/lib/python2.7/site-packages (from requests<3.0.0,>=2.13.0->spacy<2.2,>=2.1->chatterbot) (2019.11.28)
+Building wheels for collected packages: regex
+  Building wheel for regex (setup.py) ... [?25l- \ | / - \ | / - \ | error
+[31m  ERROR: Command errored out with exit status 1:
+   command: /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-G3UevC/regex/setup.py'"'"'; __file__='"'"'/tmp/pip-install-G3UevC/regex/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-F1oUPT --python-tag cp27
+       cwd: /tmp/pip-install-G3UevC/regex/
+  Complete output (1466 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-2.7
+  creating build/lib.linux-x86_64-2.7/regex
+  copying regex_3/__init__.py -> build/lib.linux-x86_64-2.7/regex
+  copying regex_3/regex.py -> build/lib.linux-x86_64-2.7/regex
+  copying regex_3/_regex_core.py -> build/lib.linux-x86_64-2.7/regex
+  copying regex_3/test_regex.py -> build/lib.linux-x86_64-2.7/regex
+  running build_ext
+  building 'regex._regex' extension
+  creating build/temp.linux-x86_64-2.7
+  creating build/temp.linux-x86_64-2.7/regex_3
+  gcc -pthread -B /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/compiler_compat -Wl,--sysroot=/ -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/include/python2.7 -c regex_3/_regex.c -o build/temp.linux-x86_64-2.7/regex_3/_regex.o
+  regex_3/_regex.c: In function ‘bytes1_char_at’:
+  regex_3/_regex.c:755:15: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+    755 |     return *((Py_UCS1*)text + pos);
+        |               ^~~~~~~
+        |               Py_UCS4
+  regex_3/_regex.c:755:15: note: each undeclared identifier is reported only once for each function it appears in
+  regex_3/_regex.c:755:23: error: expected expression before ‘)’ token
+    755 |     return *((Py_UCS1*)text + pos);
+        |                       ^
+  regex_3/_regex.c: In function ‘bytes1_set_char_at’:
+  regex_3/_regex.c:760:8: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+    760 |     *((Py_UCS1*)text + pos) = (Py_UCS1)ch;
+        |        ^~~~~~~
+        |        Py_UCS4
+  regex_3/_regex.c:760:16: error: expected expression before ‘)’ token
+    760 |     *((Py_UCS1*)text + pos) = (Py_UCS1)ch;
+        |                ^
+  regex_3/_regex.c:760:40: error: expected ‘;’ before ‘ch’
+    760 |     *((Py_UCS1*)text + pos) = (Py_UCS1)ch;
+        |                                        ^~
+        |                                        ;
+  regex_3/_regex.c: In function ‘bytes1_point_to’:
+  regex_3/_regex.c:765:13: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+    765 |     return (Py_UCS1*)text + pos;
+        |             ^~~~~~~
+        |             Py_UCS4
+  regex_3/_regex.c:765:21: error: expected expression before ‘)’ token
+    765 |     return (Py_UCS1*)text + pos;
+        |                     ^
+  regex_3/_regex.c: In function ‘bytes2_char_at’:
+  regex_3/_regex.c:770:15: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+    770 |     return *((Py_UCS2*)text + pos);
+        |               ^~~~~~~
+        |               Py_UCS4
+  regex_3/_regex.c:770:23: error: expected expression before ‘)’ token
+    770 |     return *((Py_UCS2*)text + pos);
+        |                       ^
+  regex_3/_regex.c: In function ‘bytes2_set_char_at’:
+  regex_3/_regex.c:775:8: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+    775 |     *((Py_UCS2*)text + pos) = (Py_UCS2)ch;
+        |        ^~~~~~~
+        |        Py_UCS4
+  regex_3/_regex.c:775:16: error: expected expression before ‘)’ token
+    775 |     *((Py_UCS2*)text + pos) = (Py_UCS2)ch;
+        |                ^
+  regex_3/_regex.c:775:40: error: expected ‘;’ before ‘ch’
+    775 |     *((Py_UCS2*)text + pos) = (Py_UCS2)ch;
+        |                                        ^~
+        |                                        ;
+  regex_3/_regex.c: In function ‘bytes2_point_to’:
+  regex_3/_regex.c:780:13: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+    780 |     return (Py_UCS2*)text + pos;
+        |             ^~~~~~~
+        |             Py_UCS4
+  regex_3/_regex.c:780:21: error: expected expression before ‘)’ token
+    780 |     return (Py_UCS2*)text + pos;
+        |                     ^
+  regex_3/_regex.c: In function ‘set_error’:
+  regex_3/_regex.c:2103:25: error: ‘PyExc_TimeoutError’ undeclared (first use in this function); did you mean ‘PyExc_ImportError’?
+   2103 |         PyErr_SetString(PyExc_TimeoutError, "regex timed out");
+        |                         ^~~~~~~~~~~~~~~~~~
+        |                         PyExc_ImportError
+  regex_3/_regex.c: In function ‘match_many_ANY’:
+  regex_3/_regex.c:3468:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3468 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3469:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3469 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3471:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3471 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3471:29: error: expected expression before ‘)’ token
+   3471 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3472:30: error: expected expression before ‘)’ token
+   3472 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3477:40: error: expected expression before ‘)’ token
+   3477 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:3482:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3482 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3483:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3483 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3485:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3485 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3485:29: error: expected expression before ‘)’ token
+   3485 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3486:30: error: expected expression before ‘)’ token
+   3486 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3491:40: error: expected expression before ‘)’ token
+   3491 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_ANY_REV’:
+  regex_3/_regex.c:3523:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3523 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3524:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3524 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3526:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3526 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3526:29: error: expected expression before ‘)’ token
+   3526 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3527:30: error: expected expression before ‘)’ token
+   3527 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3532:40: error: expected expression before ‘)’ token
+   3532 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:3537:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3537 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3538:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3538 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3540:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3540 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3540:29: error: expected expression before ‘)’ token
+   3540 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3541:30: error: expected expression before ‘)’ token
+   3541 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3546:40: error: expected expression before ‘)’ token
+   3546 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_ANY_U’:
+  regex_3/_regex.c:3580:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3580 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3581:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3581 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3583:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3583 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3583:29: error: expected expression before ‘)’ token
+   3583 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3584:30: error: expected expression before ‘)’ token
+   3584 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3596:40: error: expected expression before ‘)’ token
+   3596 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:3601:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3601 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3602:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3602 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3604:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3604 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3604:29: error: expected expression before ‘)’ token
+   3604 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3605:30: error: expected expression before ‘)’ token
+   3605 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3617:40: error: expected expression before ‘)’ token
+   3617 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_ANY_U_REV’:
+  regex_3/_regex.c:3658:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3658 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3659:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3659 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3661:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3661 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3661:29: error: expected expression before ‘)’ token
+   3661 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3662:30: error: expected expression before ‘)’ token
+   3662 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3674:40: error: expected expression before ‘)’ token
+   3674 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:3679:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3679 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3680:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3680 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3682:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3682 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3682:29: error: expected expression before ‘)’ token
+   3682 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3683:30: error: expected expression before ‘)’ token
+   3683 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3695:40: error: expected expression before ‘)’ token
+   3695 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_CHARACTER’:
+  regex_3/_regex.c:3737:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3737 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3738:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3738 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3740:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3740 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3740:29: error: expected expression before ‘)’ token
+   3740 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3741:30: error: expected expression before ‘)’ token
+   3741 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3746:40: error: expected expression before ‘)’ token
+   3746 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:3751:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3751 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3752:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3752 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3754:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3754 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3754:29: error: expected expression before ‘)’ token
+   3754 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3755:30: error: expected expression before ‘)’ token
+   3755 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3760:40: error: expected expression before ‘)’ token
+   3760 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_CHARACTER_IGN’:
+  regex_3/_regex.c:3797:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3797 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3798:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3798 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3800:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3800 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3800:29: error: expected expression before ‘)’ token
+   3800 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3801:30: error: expected expression before ‘)’ token
+   3801 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3807:40: error: expected expression before ‘)’ token
+   3807 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:3812:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3812 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3813:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3813 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3815:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3815 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3815:29: error: expected expression before ‘)’ token
+   3815 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3816:30: error: expected expression before ‘)’ token
+   3816 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3822:40: error: expected expression before ‘)’ token
+   3822 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_CHARACTER_IGN_REV’:
+  regex_3/_regex.c:3860:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3860 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3861:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3861 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3863:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3863 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3863:29: error: expected expression before ‘)’ token
+   3863 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3864:30: error: expected expression before ‘)’ token
+   3864 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3870:40: error: expected expression before ‘)’ token
+   3870 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:3875:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3875 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3876:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3876 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3878:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3878 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3878:29: error: expected expression before ‘)’ token
+   3878 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3879:30: error: expected expression before ‘)’ token
+   3879 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3885:40: error: expected expression before ‘)’ token
+   3885 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_CHARACTER_REV’:
+  regex_3/_regex.c:3921:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3921 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3922:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3922 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3924:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3924 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3924:29: error: expected expression before ‘)’ token
+   3924 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3925:30: error: expected expression before ‘)’ token
+   3925 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3930:40: error: expected expression before ‘)’ token
+   3930 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:3935:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3935 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3936:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   3936 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3938:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3938 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3938:29: error: expected expression before ‘)’ token
+   3938 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3939:30: error: expected expression before ‘)’ token
+   3939 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:3944:40: error: expected expression before ‘)’ token
+   3944 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_PROPERTY’:
+  regex_3/_regex.c:3983:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3983 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3984:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   3984 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:3986:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   3986 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:3986:29: error: expected expression before ‘)’ token
+   3986 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:3987:30: error: expected expression before ‘)’ token
+   3987 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4004:40: error: expected expression before ‘)’ token
+   4004 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4009:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4009 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4010:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4010 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4012:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4012 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4012:29: error: expected expression before ‘)’ token
+   4012 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4013:30: error: expected expression before ‘)’ token
+   4013 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4030:40: error: expected expression before ‘)’ token
+   4030 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_PROPERTY_IGN’:
+  regex_3/_regex.c:4081:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4081 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4082:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4082 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4084:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4084 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4084:29: error: expected expression before ‘)’ token
+   4084 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4085:30: error: expected expression before ‘)’ token
+   4085 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4102:40: error: expected expression before ‘)’ token
+   4102 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4107:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4107 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4108:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4108 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4110:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4110 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4110:29: error: expected expression before ‘)’ token
+   4110 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4111:30: error: expected expression before ‘)’ token
+   4111 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4128:40: error: expected expression before ‘)’ token
+   4128 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_PROPERTY_IGN_REV’:
+  regex_3/_regex.c:4179:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4179 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4180:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4180 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4182:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4182 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4182:29: error: expected expression before ‘)’ token
+   4182 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4183:30: error: expected expression before ‘)’ token
+   4183 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4200:40: error: expected expression before ‘)’ token
+   4200 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4205:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4205 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4206:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4206 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4208:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4208 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4208:29: error: expected expression before ‘)’ token
+   4208 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4209:30: error: expected expression before ‘)’ token
+   4209 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4226:40: error: expected expression before ‘)’ token
+   4226 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_PROPERTY_REV’:
+  regex_3/_regex.c:4277:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4277 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4278:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4278 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4280:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4280 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4280:29: error: expected expression before ‘)’ token
+   4280 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4281:30: error: expected expression before ‘)’ token
+   4281 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4298:40: error: expected expression before ‘)’ token
+   4298 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4303:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4303 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4304:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4304 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4306:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4306 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4306:29: error: expected expression before ‘)’ token
+   4306 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4307:30: error: expected expression before ‘)’ token
+   4307 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4324:40: error: expected expression before ‘)’ token
+   4324 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_RANGE’:
+  regex_3/_regex.c:4373:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4373 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4374:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4374 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4376:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4376 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4376:29: error: expected expression before ‘)’ token
+   4376 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4377:30: error: expected expression before ‘)’ token
+   4377 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4383:40: error: expected expression before ‘)’ token
+   4383 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4388:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4388 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4389:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4389 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4391:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4391 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4391:29: error: expected expression before ‘)’ token
+   4391 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4392:30: error: expected expression before ‘)’ token
+   4392 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4398:40: error: expected expression before ‘)’ token
+   4398 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_RANGE_IGN’:
+  regex_3/_regex.c:4436:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4436 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4437:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4437 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4439:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4439 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4439:29: error: expected expression before ‘)’ token
+   4439 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4440:30: error: expected expression before ‘)’ token
+   4440 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4446:40: error: expected expression before ‘)’ token
+   4446 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4451:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4451 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4452:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4452 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4454:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4454 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4454:29: error: expected expression before ‘)’ token
+   4454 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4455:30: error: expected expression before ‘)’ token
+   4455 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4461:40: error: expected expression before ‘)’ token
+   4461 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_RANGE_IGN_REV’:
+  regex_3/_regex.c:4499:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4499 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4500:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4500 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4502:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4502 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4502:29: error: expected expression before ‘)’ token
+   4502 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4503:30: error: expected expression before ‘)’ token
+   4503 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4509:40: error: expected expression before ‘)’ token
+   4509 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4514:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4514 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4515:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4515 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4517:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4517 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4517:29: error: expected expression before ‘)’ token
+   4517 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4518:30: error: expected expression before ‘)’ token
+   4518 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4524:40: error: expected expression before ‘)’ token
+   4524 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_RANGE_REV’:
+  regex_3/_regex.c:4562:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4562 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4563:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4563 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4565:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4565 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4565:29: error: expected expression before ‘)’ token
+   4565 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4566:30: error: expected expression before ‘)’ token
+   4566 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4572:40: error: expected expression before ‘)’ token
+   4572 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4577:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4577 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4578:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4578 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4580:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4580 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4580:29: error: expected expression before ‘)’ token
+   4580 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4581:30: error: expected expression before ‘)’ token
+   4581 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4587:40: error: expected expression before ‘)’ token
+   4587 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_SET’:
+  regex_3/_regex.c:4625:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4625 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4626:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4626 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4628:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4628 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4628:29: error: expected expression before ‘)’ token
+   4628 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4629:30: error: expected expression before ‘)’ token
+   4629 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4635:40: error: expected expression before ‘)’ token
+   4635 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4640:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4640 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4641:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4641 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4643:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4643 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4643:29: error: expected expression before ‘)’ token
+   4643 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4644:30: error: expected expression before ‘)’ token
+   4644 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4650:40: error: expected expression before ‘)’ token
+   4650 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_SET_IGN’:
+  regex_3/_regex.c:4688:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4688 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4689:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4689 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4691:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4691 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4691:29: error: expected expression before ‘)’ token
+   4691 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4692:30: error: expected expression before ‘)’ token
+   4692 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4698:40: error: expected expression before ‘)’ token
+   4698 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4703:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4703 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4704:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4704 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4706:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4706 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4706:29: error: expected expression before ‘)’ token
+   4706 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4707:30: error: expected expression before ‘)’ token
+   4707 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4713:40: error: expected expression before ‘)’ token
+   4713 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_SET_IGN_REV’:
+  regex_3/_regex.c:4751:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4751 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4752:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4752 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4754:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4754 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4754:29: error: expected expression before ‘)’ token
+   4754 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4755:30: error: expected expression before ‘)’ token
+   4755 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4761:40: error: expected expression before ‘)’ token
+   4761 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4766:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4766 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4767:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4767 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4769:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4769 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4769:29: error: expected expression before ‘)’ token
+   4769 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4770:30: error: expected expression before ‘)’ token
+   4770 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4776:40: error: expected expression before ‘)’ token
+   4776 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘match_many_SET_REV’:
+  regex_3/_regex.c:4814:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4814 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4815:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   4815 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4817:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4817 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4817:29: error: expected expression before ‘)’ token
+   4817 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4818:30: error: expected expression before ‘)’ token
+   4818 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4824:40: error: expected expression before ‘)’ token
+   4824 |         text_pos = text_ptr - (Py_UCS1*)text;
+        |                                        ^
+  regex_3/_regex.c:4829:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4829 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4830:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   4830 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:4832:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   4832 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:4832:29: error: expected expression before ‘)’ token
+   4832 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:4833:30: error: expected expression before ‘)’ token
+   4833 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:4839:40: error: expected expression before ‘)’ token
+   4839 |         text_pos = text_ptr - (Py_UCS2*)text;
+        |                                        ^
+  regex_3/_regex.c: In function ‘simple_string_search’:
+  regex_3/_regex.c:5120:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5120 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5120:26: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5120 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |                          ^~~~~~~
+        |                          Py_UCS4
+  regex_3/_regex.c:5120:34: error: expected expression before ‘)’ token
+   5120 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |                                  ^
+  regex_3/_regex.c:5121:18: error: ‘text_ptr’ undeclared (first use in this function); did you mean ‘text_pos’?
+   5121 |         Py_UCS1* text_ptr = text + text_pos;
+        |                  ^~~~~~~~
+        |                  text_pos
+  regex_3/_regex.c:5122:18: error: ‘limit_ptr’ undeclared (first use in this function)
+   5122 |         Py_UCS1* limit_ptr = text + limit;
+        |                  ^~~~~~~~~
+  regex_3/_regex.c:5161:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   5161 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5161:26: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5161 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |                          ^~~~~~~
+        |                          Py_UCS4
+  regex_3/_regex.c:5161:34: error: expected expression before ‘)’ token
+   5161 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |                                  ^
+  regex_3/_regex.c: In function ‘simple_string_search_ign’:
+  regex_3/_regex.c:5274:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5274 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5274:26: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5274 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |                          ^~~~~~~
+        |                          Py_UCS4
+  regex_3/_regex.c:5274:34: error: expected expression before ‘)’ token
+   5274 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |                                  ^
+  regex_3/_regex.c:5275:18: error: ‘text_ptr’ undeclared (first use in this function); did you mean ‘text_pos’?
+   5275 |         Py_UCS1* text_ptr = text + text_pos;
+        |                  ^~~~~~~~
+        |                  text_pos
+  regex_3/_regex.c:5276:18: error: ‘limit_ptr’ undeclared (first use in this function)
+   5276 |         Py_UCS1* limit_ptr = text + limit;
+        |                  ^~~~~~~~~
+  regex_3/_regex.c:5316:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   5316 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5316:26: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5316 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |                          ^~~~~~~
+        |                          Py_UCS4
+  regex_3/_regex.c:5316:34: error: expected expression before ‘)’ token
+   5316 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |                                  ^
+  regex_3/_regex.c: In function ‘simple_string_search_ign_rev’:
+  regex_3/_regex.c:5431:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5431 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5431:26: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5431 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |                          ^~~~~~~
+        |                          Py_UCS4
+  regex_3/_regex.c:5431:34: error: expected expression before ‘)’ token
+   5431 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |                                  ^
+  regex_3/_regex.c:5432:18: error: ‘text_ptr’ undeclared (first use in this function); did you mean ‘text_pos’?
+   5432 |         Py_UCS1* text_ptr = text + text_pos;
+        |                  ^~~~~~~~
+        |                  text_pos
+  regex_3/_regex.c:5433:18: error: ‘limit_ptr’ undeclared (first use in this function)
+   5433 |         Py_UCS1* limit_ptr = text + limit;
+        |                  ^~~~~~~~~
+  regex_3/_regex.c:5473:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   5473 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5473:26: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5473 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |                          ^~~~~~~
+        |                          Py_UCS4
+  regex_3/_regex.c:5473:34: error: expected expression before ‘)’ token
+   5473 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |                                  ^
+  regex_3/_regex.c: In function ‘simple_string_search_rev’:
+  regex_3/_regex.c:5583:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5583 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5583:26: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5583 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |                          ^~~~~~~
+        |                          Py_UCS4
+  regex_3/_regex.c:5583:34: error: expected expression before ‘)’ token
+   5583 |         Py_UCS1* text = (Py_UCS1*)state->text;
+        |                                  ^
+  regex_3/_regex.c:5584:18: error: ‘text_ptr’ undeclared (first use in this function); did you mean ‘text_pos’?
+   5584 |         Py_UCS1* text_ptr = text + text_pos;
+        |                  ^~~~~~~~
+        |                  text_pos
+  regex_3/_regex.c:5585:18: error: ‘limit_ptr’ undeclared (first use in this function)
+   5585 |         Py_UCS1* limit_ptr = text + limit;
+        |                  ^~~~~~~~~
+  regex_3/_regex.c:5625:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   5625 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5625:26: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5625 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |                          ^~~~~~~
+        |                          Py_UCS4
+  regex_3/_regex.c:5625:34: error: expected expression before ‘)’ token
+   5625 |         Py_UCS2* text = (Py_UCS2*)state->text;
+        |                                  ^
+  regex_3/_regex.c: In function ‘fast_string_search’:
+  regex_3/_regex.c:5742:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5742 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5743:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5743 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5745:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5745 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:5745:29: error: expected expression before ‘)’ token
+   5745 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:5746:30: error: expected expression before ‘)’ token
+   5746 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:5760:48: error: expected expression before ‘)’ token
+   5760 |                     return text_ptr - (Py_UCS1*)text;
+        |                                                ^
+  regex_3/_regex.c:5770:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   5770 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5771:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   5771 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5773:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5773 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:5773:29: error: expected expression before ‘)’ token
+   5773 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:5774:30: error: expected expression before ‘)’ token
+   5774 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:5788:48: error: expected expression before ‘)’ token
+   5788 |                     return text_ptr - (Py_UCS2*)text;
+        |                                                ^
+  regex_3/_regex.c: In function ‘fast_string_search_ign’:
+  regex_3/_regex.c:5857:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5857 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5858:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5858 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5860:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5860 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:5860:29: error: expected expression before ‘)’ token
+   5860 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:5861:30: error: expected expression before ‘)’ token
+   5861 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:5876:48: error: expected expression before ‘)’ token
+   5876 |                     return text_ptr - (Py_UCS1*)text;
+        |                                                ^
+  regex_3/_regex.c:5886:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   5886 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5887:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   5887 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5889:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5889 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:5889:29: error: expected expression before ‘)’ token
+   5889 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:5890:30: error: expected expression before ‘)’ token
+   5890 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:5905:48: error: expected expression before ‘)’ token
+   5905 |                     return text_ptr - (Py_UCS2*)text;
+        |                                                ^
+  regex_3/_regex.c: In function ‘fast_string_search_ign_rev’:
+  regex_3/_regex.c:5973:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5973 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5974:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   5974 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:5976:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   5976 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:5976:29: error: expected expression before ‘)’ token
+   5976 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:5977:30: error: expected expression before ‘)’ token
+   5977 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:5992:48: error: expected expression before ‘)’ token
+   5992 |                     return text_ptr - (Py_UCS1*)text + length;
+        |                                                ^
+  regex_3/_regex.c:6002:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   6002 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:6003:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   6003 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:6005:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   6005 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:6005:29: error: expected expression before ‘)’ token
+   6005 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:6006:30: error: expected expression before ‘)’ token
+   6006 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:6021:48: error: expected expression before ‘)’ token
+   6021 |                     return text_ptr - (Py_UCS2*)text + length;
+        |                                                ^
+  regex_3/_regex.c: In function ‘fast_string_search_rev’:
+  regex_3/_regex.c:6084:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   6084 |         Py_UCS1* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:6085:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   6085 |         Py_UCS1* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:6087:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   6087 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:6087:29: error: expected expression before ‘)’ token
+   6087 |         text_ptr = (Py_UCS1*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:6088:30: error: expected expression before ‘)’ token
+   6088 |         limit_ptr = (Py_UCS1*)text + limit;
+        |                              ^
+  regex_3/_regex.c:6102:48: error: expected expression before ‘)’ token
+   6102 |                     return text_ptr - (Py_UCS1*)text + length;
+        |                                                ^
+  regex_3/_regex.c:6112:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   6112 |         Py_UCS2* text_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:6113:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   6113 |         Py_UCS2* limit_ptr;
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:6115:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   6115 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                     ^~~~~~~
+        |                     Py_UCS4
+  regex_3/_regex.c:6115:29: error: expected expression before ‘)’ token
+   6115 |         text_ptr = (Py_UCS2*)text + text_pos;
+        |                             ^
+  regex_3/_regex.c:6116:30: error: expected expression before ‘)’ token
+   6116 |         limit_ptr = (Py_UCS2*)text + limit;
+        |                              ^
+  regex_3/_regex.c:6130:48: error: expected expression before ‘)’ token
+   6130 |                     return text_ptr - (Py_UCS2*)text + length;
+        |                                                ^
+  regex_3/_regex.c: In function ‘build_unicode_value’:
+  regex_3/_regex.c:9478:16: error: ‘PyUnicode_1BYTE_KIND’ undeclared (first use in this function); did you mean ‘PyUnicode_GET_SIZE’?
+   9478 |         kind = PyUnicode_1BYTE_KIND;
+        |                ^~~~~~~~~~~~~~~~~~~~
+        |                PyUnicode_GET_SIZE
+  regex_3/_regex.c:9481:16: error: ‘PyUnicode_2BYTE_KIND’ undeclared (first use in this function); did you mean ‘PyUnicode_GET_SIZE’?
+   9481 |         kind = PyUnicode_2BYTE_KIND;
+        |                ^~~~~~~~~~~~~~~~~~~~
+        |                PyUnicode_GET_SIZE
+  regex_3/_regex.c:9484:16: error: ‘PyUnicode_4BYTE_KIND’ undeclared (first use in this function); did you mean ‘PyUnicode_GET_SIZE’?
+   9484 |         kind = PyUnicode_4BYTE_KIND;
+        |                ^~~~~~~~~~~~~~~~~~~~
+        |                PyUnicode_GET_SIZE
+  regex_3/_regex.c:9491:12: warning: implicit declaration of function ‘PyUnicode_FromKindAndData’; did you mean ‘PyUnicode_FromOrdinal’? [-Wimplicit-function-declaration]
+   9491 |     return PyUnicode_FromKindAndData(kind, buffer, len);
+        |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+        |            PyUnicode_FromOrdinal
+  regex_3/_regex.c:9491:12: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+   9491 |     return PyUnicode_FromKindAndData(kind, buffer, len);
+        |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  regex_3/_regex.c: In function ‘build_bytes_value’:
+  regex_3/_regex.c:9499:5: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+   9499 |     Py_UCS1* byte_buffer;
+        |     ^~~~~~~
+        |     Py_UCS4
+  regex_3/_regex.c:9514:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+   9514 |         Py_UCS2 c = ((Py_UCS2*)buffer)[i];
+        |         ^~~~~~~
+        |         Py_UCS4
+  regex_3/_regex.c:9514:23: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   9514 |         Py_UCS2 c = ((Py_UCS2*)buffer)[i];
+        |                       ^~~~~~~
+        |                       Py_UCS4
+  regex_3/_regex.c:9514:31: error: expected expression before ‘)’ token
+   9514 |         Py_UCS2 c = ((Py_UCS2*)buffer)[i];
+        |                               ^
+  regex_3/_regex.c:9518:27: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+   9518 |         byte_buffer[i] = (Py_UCS1)c;
+        |                           ^~~~~~~
+        |                           Py_UCS4
+  regex_3/_regex.c:9518:35: error: expected ‘;’ before ‘c’
+   9518 |         byte_buffer[i] = (Py_UCS1)c;
+        |                                   ^
+        |                                   ;
+  regex_3/_regex.c: In function ‘get_string’:
+  regex_3/_regex.c:18037:13: warning: implicit declaration of function ‘PyUnicode_READY’; did you mean ‘PyUnicode_Check’? [-Wimplicit-function-declaration]
+  18037 |         if (PyUnicode_READY(string) == -1)
+        |             ^~~~~~~~~~~~~~~
+        |             PyUnicode_Check
+  regex_3/_regex.c:18040:39: warning: implicit declaration of function ‘PyUnicode_DATA’; did you mean ‘PyUnicode_AS_DATA’? [-Wimplicit-function-declaration]
+  18040 |         str_info->characters = (void*)PyUnicode_DATA(string);
+        |                                       ^~~~~~~~~~~~~~
+        |                                       PyUnicode_AS_DATA
+  regex_3/_regex.c:18040:32: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  18040 |         str_info->characters = (void*)PyUnicode_DATA(string);
+        |                                ^
+  regex_3/_regex.c:18041:28: warning: implicit declaration of function ‘PyUnicode_GET_LENGTH’; did you mean ‘PyUnicode_GET_SIZE’? [-Wimplicit-function-declaration]
+  18041 |         str_info->length = PyUnicode_GET_LENGTH(string);
+        |                            ^~~~~~~~~~~~~~~~~~~~
+        |                            PyUnicode_GET_SIZE
+  regex_3/_regex.c:18042:30: warning: implicit declaration of function ‘PyUnicode_KIND’; did you mean ‘PyUnicode_Join’? [-Wimplicit-function-declaration]
+  18042 |         str_info->charsize = PyUnicode_KIND(string);
+        |                              ^~~~~~~~~~~~~~
+        |                              PyUnicode_Join
+  regex_3/_regex.c: In function ‘ensure_immutable’:
+  regex_3/_regex.c:18557:22: warning: implicit declaration of function ‘PyBytes_FromObject’; did you mean ‘PyBuffer_FromObject’? [-Wimplicit-function-declaration]
+  18557 |         new_string = PyBytes_FromObject(string);
+        |                      ^~~~~~~~~~~~~~~~~~
+        |                      PyBuffer_FromObject
+  regex_3/_regex.c:18557:20: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  18557 |         new_string = PyBytes_FromObject(string);
+        |                    ^
+  regex_3/_regex.c: In function ‘unicode_slice’:
+  regex_3/_regex.c:18585:12: warning: implicit declaration of function ‘PyUnicode_Substring’; did you mean ‘PyUnicode_FromString’? [-Wimplicit-function-declaration]
+  18585 |     return PyUnicode_Substring(string, start, end);
+        |            ^~~~~~~~~~~~~~~~~~~
+        |            PyUnicode_FromString
+  regex_3/_regex.c:18585:12: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  18585 |     return PyUnicode_Substring(string, start, end);
+        |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  regex_3/_regex.c: In function ‘add_to_join_list’:
+  regex_3/_regex.c:19408:22: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  19408 |             new_item = PyBytes_FromObject(item);
+        |                      ^
+  regex_3/_regex.c: In function ‘join_list_info’:
+  regex_3/_regex.c:19475:22: warning: implicit declaration of function ‘PyUnicode_New’; did you mean ‘PyCode_New’? [-Wimplicit-function-declaration]
+  19475 |             joiner = PyUnicode_New(0, 0);
+        |                      ^~~~~~~~~~~~~
+        |                      PyCode_New
+  regex_3/_regex.c:19475:20: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  19475 |             joiner = PyUnicode_New(0, 0);
+        |                    ^
+  regex_3/_regex.c:19505:16: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+  19505 |         return PyUnicode_New(0, 0);
+        |                ^~~~~~~~~~~~~~~~~~~
+  regex_3/_regex.c: In function ‘match_get_group_slice’:
+  regex_3/_regex.c:19809:30: warning: passing argument 1 of ‘PySlice_GetIndicesEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+  19809 |     if (PySlice_GetIndicesEx(slice, (Py_ssize_t)self->group_count + 1, &start,
+        |                              ^~~~~
+        |                              |
+        |                              PyObject * {aka struct _object *}
+  In file included from /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/include/python2.7/Python.h:115,
+                   from regex_3/_regex.c:50:
+  /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/include/python2.7/sliceobject.h:37:53: note: expected ‘PySliceObject *’ {aka ‘struct <anonymous> *’} but argument is of type ‘PyObject *’ {aka ‘struct _object *’}
+     37 | PyAPI_FUNC(int) PySlice_GetIndicesEx(PySliceObject *r, Py_ssize_t length,
+        |                                      ~~~~~~~~~~~~~~~^
+  regex_3/_regex.c: In function ‘index_to_integer’:
+  regex_3/_regex.c:21024:19: warning: implicit declaration of function ‘PyLong_FromUnicodeObject’; did you mean ‘PyLong_FromUnicode’? [-Wimplicit-function-declaration]
+  21024 |         int_obj = PyLong_FromUnicodeObject(item, 0);
+        |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+        |                   PyLong_FromUnicode
+  regex_3/_regex.c:21024:17: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  21024 |         int_obj = PyLong_FromUnicodeObject(item, 0);
+        |                 ^
+  regex_3/_regex.c: In function ‘pattern_sizeof’:
+  regex_3/_regex.c:22280:13: warning: implicit declaration of function ‘PyLong_AsSize_t’; did you mean ‘PyLong_AsSsize_t’? [-Wimplicit-function-declaration]
+  22280 |     size += PyLong_AsSize_t(result);
+        |             ^~~~~~~~~~~~~~~
+        |             PyLong_AsSsize_t
+  regex_3/_regex.c: At top level:
+  regex_3/_regex.c:26217:15: error: variable ‘regex_module’ has initializer but incomplete type
+  26217 | static struct PyModuleDef regex_module = {
+        |               ^~~~~~~~~~~
+  regex_3/_regex.c:26218:5: error: ‘PyModuleDef_HEAD_INIT’ undeclared here (not in a function)
+  26218 |     PyModuleDef_HEAD_INIT,
+        |     ^~~~~~~~~~~~~~~~~~~~~
+  regex_3/_regex.c:26218:5: warning: excess elements in struct initializer
+  regex_3/_regex.c:26218:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c:26219:5: warning: excess elements in struct initializer
+  26219 |     "_regex",
+        |     ^~~~~~~~
+  regex_3/_regex.c:26219:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c:26220:5: warning: excess elements in struct initializer
+  26220 |     NULL,
+        |     ^~~~
+  regex_3/_regex.c:26220:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c:26221:5: warning: excess elements in struct initializer
+  26221 |     -1,
+        |     ^
+  regex_3/_regex.c:26221:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c:26222:5: warning: excess elements in struct initializer
+  26222 |     _functions,
+        |     ^~~~~~~~~~
+  regex_3/_regex.c:26222:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c:26223:5: warning: excess elements in struct initializer
+  26223 |     NULL,
+        |     ^~~~
+  regex_3/_regex.c:26223:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c:26224:5: warning: excess elements in struct initializer
+  26224 |     NULL,
+        |     ^~~~
+  regex_3/_regex.c:26224:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c:26225:5: warning: excess elements in struct initializer
+  26225 |     NULL,
+        |     ^~~~
+  regex_3/_regex.c:26225:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c:26226:5: warning: excess elements in struct initializer
+  26226 |     NULL
+        |     ^~~~
+  regex_3/_regex.c:26226:5: note: (near initialization for ‘regex_module’)
+  regex_3/_regex.c: In function ‘PyInit__regex’:
+  regex_3/_regex.c:26287:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+  26287 |         return NULL;
+        |                ^~~~
+  regex_3/_regex.c:26230:16: note: declared here
+  26230 | PyMODINIT_FUNC PyInit__regex(void) {
+        |                ^~~~~~~~~~~~~
+  regex_3/_regex.c:26289:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+  26289 |         return NULL;
+        |                ^~~~
+  regex_3/_regex.c:26230:16: note: declared here
+  26230 | PyMODINIT_FUNC PyInit__regex(void) {
+        |                ^~~~~~~~~~~~~
+  regex_3/_regex.c:26291:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+  26291 |         return NULL;
+        |                ^~~~
+  regex_3/_regex.c:26230:16: note: declared here
+  26230 | PyMODINIT_FUNC PyInit__regex(void) {
+        |                ^~~~~~~~~~~~~
+  regex_3/_regex.c:26293:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+  26293 |         return NULL;
+        |                ^~~~
+  regex_3/_regex.c:26230:16: note: declared here
+  26230 | PyMODINIT_FUNC PyInit__regex(void) {
+        |                ^~~~~~~~~~~~~
+  regex_3/_regex.c:26295:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+  26295 |         return NULL;
+        |                ^~~~
+  regex_3/_regex.c:26230:16: note: declared here
+  26230 | PyMODINIT_FUNC PyInit__regex(void) {
+        |                ^~~~~~~~~~~~~
+  regex_3/_regex.c:26299:9: warning: implicit declaration of function ‘PyModule_Create’; did you mean ‘PyModule_Check’? [-Wimplicit-function-declaration]
+  26299 |     m = PyModule_Create(&regex_module);
+        |         ^~~~~~~~~~~~~~~
+        |         PyModule_Check
+  regex_3/_regex.c:26299:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  26299 |     m = PyModule_Create(&regex_module);
+        |       ^
+  regex_3/_regex.c:26301:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+  26301 |         return NULL;
+        |                ^~~~
+  regex_3/_regex.c:26230:16: note: declared here
+  26230 | PyMODINIT_FUNC PyInit__regex(void) {
+        |                ^~~~~~~~~~~~~
+  regex_3/_regex.c:26326:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+  26326 |         return NULL;
+        |                ^~~~
+  regex_3/_regex.c:26230:16: note: declared here
+  26230 | PyMODINIT_FUNC PyInit__regex(void) {
+        |                ^~~~~~~~~~~~~
+  regex_3/_regex.c:26329:12: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+  26329 |     return m;
+        |            ^
+  regex_3/_regex.c:26230:16: note: declared here
+  26230 | PyMODINIT_FUNC PyInit__regex(void) {
+        |                ^~~~~~~~~~~~~
+  regex_3/_regex.c: At top level:
+  regex_3/_regex.c:26217:27: error: storage size of ‘regex_module’ isn’t known
+  26217 | static struct PyModuleDef regex_module = {
+        |                           ^~~~~~~~~~~~
+  regex_3/_regex.c: In function ‘bytes2_char_at’:
+  regex_3/_regex.c:771:1: warning: control reaches end of non-void function [-Wreturn-type]
+    771 | }
+        | ^
+  regex_3/_regex.c: In function ‘bytes1_char_at’:
+  regex_3/_regex.c:756:1: warning: control reaches end of non-void function [-Wreturn-type]
+    756 | }
+        | ^
+  regex_3/_regex.c: In function ‘bytes2_point_to’:
+  regex_3/_regex.c:781:1: warning: control reaches end of non-void function [-Wreturn-type]
+    781 | }
+        | ^
+  regex_3/_regex.c: In function ‘bytes1_point_to’:
+  regex_3/_regex.c:766:1: warning: control reaches end of non-void function [-Wreturn-type]
+    766 | }
+        | ^
+  error: command 'gcc' failed with exit status 1
+  ----------------------------------------[0m
+[31m  ERROR: Failed building wheel for regex[0m
+[?25h  Running setup.py clean for regex
+Failed to build regex
+Installing collected packages: regex, nltk, sqlalchemy, python-dateutil, pyyaml, pathlib, srsly, blis, plac, wasabi, murmurhash, idna, chardet, urllib3, requests, cymem, preshed, thinc, spacy, pymongo, mathparse, funcsigs, pint, chatterbot
+    Running setup.py install for regex ... [?25l- \ | / - \ | / - \ | error
+[31m    ERROR: Command errored out with exit status 1:
+     command: /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-G3UevC/regex/setup.py'"'"'; __file__='"'"'/tmp/pip-install-G3UevC/regex/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-1uzV_R/install-record.txt --single-version-externally-managed --compile
+         cwd: /tmp/pip-install-G3UevC/regex/
+    Complete output (1466 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-2.7
+    creating build/lib.linux-x86_64-2.7/regex
+    copying regex_3/__init__.py -> build/lib.linux-x86_64-2.7/regex
+    copying regex_3/regex.py -> build/lib.linux-x86_64-2.7/regex
+    copying regex_3/_regex_core.py -> build/lib.linux-x86_64-2.7/regex
+    copying regex_3/test_regex.py -> build/lib.linux-x86_64-2.7/regex
+    running build_ext
+    building 'regex._regex' extension
+    creating build/temp.linux-x86_64-2.7
+    creating build/temp.linux-x86_64-2.7/regex_3
+    gcc -pthread -B /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/compiler_compat -Wl,--sysroot=/ -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/include/python2.7 -c regex_3/_regex.c -o build/temp.linux-x86_64-2.7/regex_3/_regex.o
+    regex_3/_regex.c: In function ‘bytes1_char_at’:
+    regex_3/_regex.c:755:15: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+      755 |     return *((Py_UCS1*)text + pos);
+          |               ^~~~~~~
+          |               Py_UCS4
+    regex_3/_regex.c:755:15: note: each undeclared identifier is reported only once for each function it appears in
+    regex_3/_regex.c:755:23: error: expected expression before ‘)’ token
+      755 |     return *((Py_UCS1*)text + pos);
+          |                       ^
+    regex_3/_regex.c: In function ‘bytes1_set_char_at’:
+    regex_3/_regex.c:760:8: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+      760 |     *((Py_UCS1*)text + pos) = (Py_UCS1)ch;
+          |        ^~~~~~~
+          |        Py_UCS4
+    regex_3/_regex.c:760:16: error: expected expression before ‘)’ token
+      760 |     *((Py_UCS1*)text + pos) = (Py_UCS1)ch;
+          |                ^
+    regex_3/_regex.c:760:40: error: expected ‘;’ before ‘ch’
+      760 |     *((Py_UCS1*)text + pos) = (Py_UCS1)ch;
+          |                                        ^~
+          |                                        ;
+    regex_3/_regex.c: In function ‘bytes1_point_to’:
+    regex_3/_regex.c:765:13: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+      765 |     return (Py_UCS1*)text + pos;
+          |             ^~~~~~~
+          |             Py_UCS4
+    regex_3/_regex.c:765:21: error: expected expression before ‘)’ token
+      765 |     return (Py_UCS1*)text + pos;
+          |                     ^
+    regex_3/_regex.c: In function ‘bytes2_char_at’:
+    regex_3/_regex.c:770:15: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+      770 |     return *((Py_UCS2*)text + pos);
+          |               ^~~~~~~
+          |               Py_UCS4
+    regex_3/_regex.c:770:23: error: expected expression before ‘)’ token
+      770 |     return *((Py_UCS2*)text + pos);
+          |                       ^
+    regex_3/_regex.c: In function ‘bytes2_set_char_at’:
+    regex_3/_regex.c:775:8: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+      775 |     *((Py_UCS2*)text + pos) = (Py_UCS2)ch;
+          |        ^~~~~~~
+          |        Py_UCS4
+    regex_3/_regex.c:775:16: error: expected expression before ‘)’ token
+      775 |     *((Py_UCS2*)text + pos) = (Py_UCS2)ch;
+          |                ^
+    regex_3/_regex.c:775:40: error: expected ‘;’ before ‘ch’
+      775 |     *((Py_UCS2*)text + pos) = (Py_UCS2)ch;
+          |                                        ^~
+          |                                        ;
+    regex_3/_regex.c: In function ‘bytes2_point_to’:
+    regex_3/_regex.c:780:13: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+      780 |     return (Py_UCS2*)text + pos;
+          |             ^~~~~~~
+          |             Py_UCS4
+    regex_3/_regex.c:780:21: error: expected expression before ‘)’ token
+      780 |     return (Py_UCS2*)text + pos;
+          |                     ^
+    regex_3/_regex.c: In function ‘set_error’:
+    regex_3/_regex.c:2103:25: error: ‘PyExc_TimeoutError’ undeclared (first use in this function); did you mean ‘PyExc_ImportError’?
+     2103 |         PyErr_SetString(PyExc_TimeoutError, "regex timed out");
+          |                         ^~~~~~~~~~~~~~~~~~
+          |                         PyExc_ImportError
+    regex_3/_regex.c: In function ‘match_many_ANY’:
+    regex_3/_regex.c:3468:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3468 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3469:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3469 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3471:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3471 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3471:29: error: expected expression before ‘)’ token
+     3471 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3472:30: error: expected expression before ‘)’ token
+     3472 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3477:40: error: expected expression before ‘)’ token
+     3477 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:3482:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3482 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3483:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3483 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3485:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3485 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3485:29: error: expected expression before ‘)’ token
+     3485 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3486:30: error: expected expression before ‘)’ token
+     3486 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3491:40: error: expected expression before ‘)’ token
+     3491 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_ANY_REV’:
+    regex_3/_regex.c:3523:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3523 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3524:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3524 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3526:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3526 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3526:29: error: expected expression before ‘)’ token
+     3526 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3527:30: error: expected expression before ‘)’ token
+     3527 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3532:40: error: expected expression before ‘)’ token
+     3532 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:3537:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3537 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3538:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3538 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3540:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3540 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3540:29: error: expected expression before ‘)’ token
+     3540 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3541:30: error: expected expression before ‘)’ token
+     3541 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3546:40: error: expected expression before ‘)’ token
+     3546 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_ANY_U’:
+    regex_3/_regex.c:3580:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3580 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3581:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3581 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3583:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3583 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3583:29: error: expected expression before ‘)’ token
+     3583 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3584:30: error: expected expression before ‘)’ token
+     3584 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3596:40: error: expected expression before ‘)’ token
+     3596 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:3601:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3601 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3602:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3602 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3604:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3604 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3604:29: error: expected expression before ‘)’ token
+     3604 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3605:30: error: expected expression before ‘)’ token
+     3605 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3617:40: error: expected expression before ‘)’ token
+     3617 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_ANY_U_REV’:
+    regex_3/_regex.c:3658:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3658 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3659:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3659 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3661:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3661 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3661:29: error: expected expression before ‘)’ token
+     3661 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3662:30: error: expected expression before ‘)’ token
+     3662 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3674:40: error: expected expression before ‘)’ token
+     3674 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:3679:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3679 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3680:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3680 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3682:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3682 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3682:29: error: expected expression before ‘)’ token
+     3682 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3683:30: error: expected expression before ‘)’ token
+     3683 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3695:40: error: expected expression before ‘)’ token
+     3695 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_CHARACTER’:
+    regex_3/_regex.c:3737:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3737 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3738:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3738 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3740:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3740 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3740:29: error: expected expression before ‘)’ token
+     3740 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3741:30: error: expected expression before ‘)’ token
+     3741 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3746:40: error: expected expression before ‘)’ token
+     3746 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:3751:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3751 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3752:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3752 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3754:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3754 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3754:29: error: expected expression before ‘)’ token
+     3754 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3755:30: error: expected expression before ‘)’ token
+     3755 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3760:40: error: expected expression before ‘)’ token
+     3760 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_CHARACTER_IGN’:
+    regex_3/_regex.c:3797:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3797 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3798:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3798 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3800:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3800 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3800:29: error: expected expression before ‘)’ token
+     3800 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3801:30: error: expected expression before ‘)’ token
+     3801 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3807:40: error: expected expression before ‘)’ token
+     3807 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:3812:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3812 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3813:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3813 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3815:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3815 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3815:29: error: expected expression before ‘)’ token
+     3815 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3816:30: error: expected expression before ‘)’ token
+     3816 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3822:40: error: expected expression before ‘)’ token
+     3822 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_CHARACTER_IGN_REV’:
+    regex_3/_regex.c:3860:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3860 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3861:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3861 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3863:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3863 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3863:29: error: expected expression before ‘)’ token
+     3863 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3864:30: error: expected expression before ‘)’ token
+     3864 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3870:40: error: expected expression before ‘)’ token
+     3870 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:3875:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3875 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3876:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3876 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3878:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3878 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3878:29: error: expected expression before ‘)’ token
+     3878 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3879:30: error: expected expression before ‘)’ token
+     3879 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3885:40: error: expected expression before ‘)’ token
+     3885 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_CHARACTER_REV’:
+    regex_3/_regex.c:3921:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3921 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3922:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3922 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3924:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3924 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3924:29: error: expected expression before ‘)’ token
+     3924 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3925:30: error: expected expression before ‘)’ token
+     3925 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3930:40: error: expected expression before ‘)’ token
+     3930 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:3935:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3935 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3936:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     3936 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3938:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3938 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3938:29: error: expected expression before ‘)’ token
+     3938 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3939:30: error: expected expression before ‘)’ token
+     3939 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:3944:40: error: expected expression before ‘)’ token
+     3944 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_PROPERTY’:
+    regex_3/_regex.c:3983:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3983 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3984:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     3984 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:3986:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     3986 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:3986:29: error: expected expression before ‘)’ token
+     3986 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:3987:30: error: expected expression before ‘)’ token
+     3987 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4004:40: error: expected expression before ‘)’ token
+     4004 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4009:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4009 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4010:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4010 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4012:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4012 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4012:29: error: expected expression before ‘)’ token
+     4012 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4013:30: error: expected expression before ‘)’ token
+     4013 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4030:40: error: expected expression before ‘)’ token
+     4030 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_PROPERTY_IGN’:
+    regex_3/_regex.c:4081:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4081 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4082:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4082 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4084:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4084 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4084:29: error: expected expression before ‘)’ token
+     4084 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4085:30: error: expected expression before ‘)’ token
+     4085 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4102:40: error: expected expression before ‘)’ token
+     4102 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4107:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4107 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4108:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4108 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4110:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4110 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4110:29: error: expected expression before ‘)’ token
+     4110 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4111:30: error: expected expression before ‘)’ token
+     4111 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4128:40: error: expected expression before ‘)’ token
+     4128 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_PROPERTY_IGN_REV’:
+    regex_3/_regex.c:4179:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4179 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4180:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4180 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4182:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4182 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4182:29: error: expected expression before ‘)’ token
+     4182 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4183:30: error: expected expression before ‘)’ token
+     4183 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4200:40: error: expected expression before ‘)’ token
+     4200 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4205:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4205 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4206:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4206 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4208:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4208 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4208:29: error: expected expression before ‘)’ token
+     4208 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4209:30: error: expected expression before ‘)’ token
+     4209 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4226:40: error: expected expression before ‘)’ token
+     4226 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_PROPERTY_REV’:
+    regex_3/_regex.c:4277:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4277 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4278:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4278 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4280:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4280 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4280:29: error: expected expression before ‘)’ token
+     4280 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4281:30: error: expected expression before ‘)’ token
+     4281 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4298:40: error: expected expression before ‘)’ token
+     4298 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4303:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4303 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4304:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4304 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4306:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4306 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4306:29: error: expected expression before ‘)’ token
+     4306 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4307:30: error: expected expression before ‘)’ token
+     4307 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4324:40: error: expected expression before ‘)’ token
+     4324 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_RANGE’:
+    regex_3/_regex.c:4373:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4373 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4374:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4374 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4376:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4376 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4376:29: error: expected expression before ‘)’ token
+     4376 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4377:30: error: expected expression before ‘)’ token
+     4377 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4383:40: error: expected expression before ‘)’ token
+     4383 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4388:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4388 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4389:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4389 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4391:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4391 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4391:29: error: expected expression before ‘)’ token
+     4391 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4392:30: error: expected expression before ‘)’ token
+     4392 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4398:40: error: expected expression before ‘)’ token
+     4398 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_RANGE_IGN’:
+    regex_3/_regex.c:4436:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4436 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4437:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4437 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4439:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4439 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4439:29: error: expected expression before ‘)’ token
+     4439 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4440:30: error: expected expression before ‘)’ token
+     4440 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4446:40: error: expected expression before ‘)’ token
+     4446 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4451:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4451 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4452:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4452 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4454:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4454 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4454:29: error: expected expression before ‘)’ token
+     4454 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4455:30: error: expected expression before ‘)’ token
+     4455 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4461:40: error: expected expression before ‘)’ token
+     4461 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_RANGE_IGN_REV’:
+    regex_3/_regex.c:4499:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4499 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4500:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4500 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4502:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4502 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4502:29: error: expected expression before ‘)’ token
+     4502 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4503:30: error: expected expression before ‘)’ token
+     4503 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4509:40: error: expected expression before ‘)’ token
+     4509 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4514:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4514 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4515:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4515 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4517:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4517 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4517:29: error: expected expression before ‘)’ token
+     4517 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4518:30: error: expected expression before ‘)’ token
+     4518 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4524:40: error: expected expression before ‘)’ token
+     4524 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_RANGE_REV’:
+    regex_3/_regex.c:4562:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4562 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4563:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4563 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4565:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4565 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4565:29: error: expected expression before ‘)’ token
+     4565 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4566:30: error: expected expression before ‘)’ token
+     4566 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4572:40: error: expected expression before ‘)’ token
+     4572 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4577:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4577 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4578:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4578 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4580:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4580 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4580:29: error: expected expression before ‘)’ token
+     4580 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4581:30: error: expected expression before ‘)’ token
+     4581 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4587:40: error: expected expression before ‘)’ token
+     4587 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_SET’:
+    regex_3/_regex.c:4625:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4625 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4626:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4626 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4628:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4628 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4628:29: error: expected expression before ‘)’ token
+     4628 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4629:30: error: expected expression before ‘)’ token
+     4629 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4635:40: error: expected expression before ‘)’ token
+     4635 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4640:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4640 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4641:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4641 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4643:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4643 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4643:29: error: expected expression before ‘)’ token
+     4643 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4644:30: error: expected expression before ‘)’ token
+     4644 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4650:40: error: expected expression before ‘)’ token
+     4650 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_SET_IGN’:
+    regex_3/_regex.c:4688:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4688 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4689:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4689 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4691:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4691 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4691:29: error: expected expression before ‘)’ token
+     4691 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4692:30: error: expected expression before ‘)’ token
+     4692 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4698:40: error: expected expression before ‘)’ token
+     4698 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4703:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4703 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4704:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4704 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4706:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4706 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4706:29: error: expected expression before ‘)’ token
+     4706 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4707:30: error: expected expression before ‘)’ token
+     4707 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4713:40: error: expected expression before ‘)’ token
+     4713 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_SET_IGN_REV’:
+    regex_3/_regex.c:4751:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4751 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4752:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4752 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4754:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4754 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4754:29: error: expected expression before ‘)’ token
+     4754 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4755:30: error: expected expression before ‘)’ token
+     4755 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4761:40: error: expected expression before ‘)’ token
+     4761 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4766:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4766 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4767:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4767 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4769:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4769 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4769:29: error: expected expression before ‘)’ token
+     4769 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4770:30: error: expected expression before ‘)’ token
+     4770 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4776:40: error: expected expression before ‘)’ token
+     4776 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘match_many_SET_REV’:
+    regex_3/_regex.c:4814:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4814 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4815:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     4815 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4817:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4817 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4817:29: error: expected expression before ‘)’ token
+     4817 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4818:30: error: expected expression before ‘)’ token
+     4818 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4824:40: error: expected expression before ‘)’ token
+     4824 |         text_pos = text_ptr - (Py_UCS1*)text;
+          |                                        ^
+    regex_3/_regex.c:4829:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4829 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4830:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     4830 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:4832:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     4832 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:4832:29: error: expected expression before ‘)’ token
+     4832 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:4833:30: error: expected expression before ‘)’ token
+     4833 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:4839:40: error: expected expression before ‘)’ token
+     4839 |         text_pos = text_ptr - (Py_UCS2*)text;
+          |                                        ^
+    regex_3/_regex.c: In function ‘simple_string_search’:
+    regex_3/_regex.c:5120:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5120 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5120:26: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5120 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |                          ^~~~~~~
+          |                          Py_UCS4
+    regex_3/_regex.c:5120:34: error: expected expression before ‘)’ token
+     5120 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |                                  ^
+    regex_3/_regex.c:5121:18: error: ‘text_ptr’ undeclared (first use in this function); did you mean ‘text_pos’?
+     5121 |         Py_UCS1* text_ptr = text + text_pos;
+          |                  ^~~~~~~~
+          |                  text_pos
+    regex_3/_regex.c:5122:18: error: ‘limit_ptr’ undeclared (first use in this function)
+     5122 |         Py_UCS1* limit_ptr = text + limit;
+          |                  ^~~~~~~~~
+    regex_3/_regex.c:5161:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     5161 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5161:26: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5161 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |                          ^~~~~~~
+          |                          Py_UCS4
+    regex_3/_regex.c:5161:34: error: expected expression before ‘)’ token
+     5161 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |                                  ^
+    regex_3/_regex.c: In function ‘simple_string_search_ign’:
+    regex_3/_regex.c:5274:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5274 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5274:26: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5274 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |                          ^~~~~~~
+          |                          Py_UCS4
+    regex_3/_regex.c:5274:34: error: expected expression before ‘)’ token
+     5274 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |                                  ^
+    regex_3/_regex.c:5275:18: error: ‘text_ptr’ undeclared (first use in this function); did you mean ‘text_pos’?
+     5275 |         Py_UCS1* text_ptr = text + text_pos;
+          |                  ^~~~~~~~
+          |                  text_pos
+    regex_3/_regex.c:5276:18: error: ‘limit_ptr’ undeclared (first use in this function)
+     5276 |         Py_UCS1* limit_ptr = text + limit;
+          |                  ^~~~~~~~~
+    regex_3/_regex.c:5316:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     5316 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5316:26: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5316 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |                          ^~~~~~~
+          |                          Py_UCS4
+    regex_3/_regex.c:5316:34: error: expected expression before ‘)’ token
+     5316 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |                                  ^
+    regex_3/_regex.c: In function ‘simple_string_search_ign_rev’:
+    regex_3/_regex.c:5431:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5431 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5431:26: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5431 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |                          ^~~~~~~
+          |                          Py_UCS4
+    regex_3/_regex.c:5431:34: error: expected expression before ‘)’ token
+     5431 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |                                  ^
+    regex_3/_regex.c:5432:18: error: ‘text_ptr’ undeclared (first use in this function); did you mean ‘text_pos’?
+     5432 |         Py_UCS1* text_ptr = text + text_pos;
+          |                  ^~~~~~~~
+          |                  text_pos
+    regex_3/_regex.c:5433:18: error: ‘limit_ptr’ undeclared (first use in this function)
+     5433 |         Py_UCS1* limit_ptr = text + limit;
+          |                  ^~~~~~~~~
+    regex_3/_regex.c:5473:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     5473 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5473:26: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5473 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |                          ^~~~~~~
+          |                          Py_UCS4
+    regex_3/_regex.c:5473:34: error: expected expression before ‘)’ token
+     5473 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |                                  ^
+    regex_3/_regex.c: In function ‘simple_string_search_rev’:
+    regex_3/_regex.c:5583:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5583 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5583:26: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5583 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |                          ^~~~~~~
+          |                          Py_UCS4
+    regex_3/_regex.c:5583:34: error: expected expression before ‘)’ token
+     5583 |         Py_UCS1* text = (Py_UCS1*)state->text;
+          |                                  ^
+    regex_3/_regex.c:5584:18: error: ‘text_ptr’ undeclared (first use in this function); did you mean ‘text_pos’?
+     5584 |         Py_UCS1* text_ptr = text + text_pos;
+          |                  ^~~~~~~~
+          |                  text_pos
+    regex_3/_regex.c:5585:18: error: ‘limit_ptr’ undeclared (first use in this function)
+     5585 |         Py_UCS1* limit_ptr = text + limit;
+          |                  ^~~~~~~~~
+    regex_3/_regex.c:5625:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     5625 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5625:26: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5625 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |                          ^~~~~~~
+          |                          Py_UCS4
+    regex_3/_regex.c:5625:34: error: expected expression before ‘)’ token
+     5625 |         Py_UCS2* text = (Py_UCS2*)state->text;
+          |                                  ^
+    regex_3/_regex.c: In function ‘fast_string_search’:
+    regex_3/_regex.c:5742:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5742 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5743:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5743 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5745:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5745 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:5745:29: error: expected expression before ‘)’ token
+     5745 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:5746:30: error: expected expression before ‘)’ token
+     5746 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:5760:48: error: expected expression before ‘)’ token
+     5760 |                     return text_ptr - (Py_UCS1*)text;
+          |                                                ^
+    regex_3/_regex.c:5770:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     5770 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5771:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     5771 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5773:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5773 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:5773:29: error: expected expression before ‘)’ token
+     5773 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:5774:30: error: expected expression before ‘)’ token
+     5774 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:5788:48: error: expected expression before ‘)’ token
+     5788 |                     return text_ptr - (Py_UCS2*)text;
+          |                                                ^
+    regex_3/_regex.c: In function ‘fast_string_search_ign’:
+    regex_3/_regex.c:5857:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5857 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5858:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5858 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5860:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5860 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:5860:29: error: expected expression before ‘)’ token
+     5860 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:5861:30: error: expected expression before ‘)’ token
+     5861 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:5876:48: error: expected expression before ‘)’ token
+     5876 |                     return text_ptr - (Py_UCS1*)text;
+          |                                                ^
+    regex_3/_regex.c:5886:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     5886 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5887:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     5887 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5889:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5889 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:5889:29: error: expected expression before ‘)’ token
+     5889 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:5890:30: error: expected expression before ‘)’ token
+     5890 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:5905:48: error: expected expression before ‘)’ token
+     5905 |                     return text_ptr - (Py_UCS2*)text;
+          |                                                ^
+    regex_3/_regex.c: In function ‘fast_string_search_ign_rev’:
+    regex_3/_regex.c:5973:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5973 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5974:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     5974 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:5976:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     5976 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:5976:29: error: expected expression before ‘)’ token
+     5976 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:5977:30: error: expected expression before ‘)’ token
+     5977 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:5992:48: error: expected expression before ‘)’ token
+     5992 |                     return text_ptr - (Py_UCS1*)text + length;
+          |                                                ^
+    regex_3/_regex.c:6002:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     6002 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:6003:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     6003 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:6005:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     6005 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:6005:29: error: expected expression before ‘)’ token
+     6005 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:6006:30: error: expected expression before ‘)’ token
+     6006 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:6021:48: error: expected expression before ‘)’ token
+     6021 |                     return text_ptr - (Py_UCS2*)text + length;
+          |                                                ^
+    regex_3/_regex.c: In function ‘fast_string_search_rev’:
+    regex_3/_regex.c:6084:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     6084 |         Py_UCS1* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:6085:9: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     6085 |         Py_UCS1* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:6087:21: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     6087 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:6087:29: error: expected expression before ‘)’ token
+     6087 |         text_ptr = (Py_UCS1*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:6088:30: error: expected expression before ‘)’ token
+     6088 |         limit_ptr = (Py_UCS1*)text + limit;
+          |                              ^
+    regex_3/_regex.c:6102:48: error: expected expression before ‘)’ token
+     6102 |                     return text_ptr - (Py_UCS1*)text + length;
+          |                                                ^
+    regex_3/_regex.c:6112:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     6112 |         Py_UCS2* text_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:6113:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     6113 |         Py_UCS2* limit_ptr;
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:6115:21: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     6115 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                     ^~~~~~~
+          |                     Py_UCS4
+    regex_3/_regex.c:6115:29: error: expected expression before ‘)’ token
+     6115 |         text_ptr = (Py_UCS2*)text + text_pos;
+          |                             ^
+    regex_3/_regex.c:6116:30: error: expected expression before ‘)’ token
+     6116 |         limit_ptr = (Py_UCS2*)text + limit;
+          |                              ^
+    regex_3/_regex.c:6130:48: error: expected expression before ‘)’ token
+     6130 |                     return text_ptr - (Py_UCS2*)text + length;
+          |                                                ^
+    regex_3/_regex.c: In function ‘build_unicode_value’:
+    regex_3/_regex.c:9478:16: error: ‘PyUnicode_1BYTE_KIND’ undeclared (first use in this function); did you mean ‘PyUnicode_GET_SIZE’?
+     9478 |         kind = PyUnicode_1BYTE_KIND;
+          |                ^~~~~~~~~~~~~~~~~~~~
+          |                PyUnicode_GET_SIZE
+    regex_3/_regex.c:9481:16: error: ‘PyUnicode_2BYTE_KIND’ undeclared (first use in this function); did you mean ‘PyUnicode_GET_SIZE’?
+     9481 |         kind = PyUnicode_2BYTE_KIND;
+          |                ^~~~~~~~~~~~~~~~~~~~
+          |                PyUnicode_GET_SIZE
+    regex_3/_regex.c:9484:16: error: ‘PyUnicode_4BYTE_KIND’ undeclared (first use in this function); did you mean ‘PyUnicode_GET_SIZE’?
+     9484 |         kind = PyUnicode_4BYTE_KIND;
+          |                ^~~~~~~~~~~~~~~~~~~~
+          |                PyUnicode_GET_SIZE
+    regex_3/_regex.c:9491:12: warning: implicit declaration of function ‘PyUnicode_FromKindAndData’; did you mean ‘PyUnicode_FromOrdinal’? [-Wimplicit-function-declaration]
+     9491 |     return PyUnicode_FromKindAndData(kind, buffer, len);
+          |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+          |            PyUnicode_FromOrdinal
+    regex_3/_regex.c:9491:12: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+     9491 |     return PyUnicode_FromKindAndData(kind, buffer, len);
+          |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    regex_3/_regex.c: In function ‘build_bytes_value’:
+    regex_3/_regex.c:9499:5: error: unknown type name ‘Py_UCS1’; did you mean ‘Py_UCS4’?
+     9499 |     Py_UCS1* byte_buffer;
+          |     ^~~~~~~
+          |     Py_UCS4
+    regex_3/_regex.c:9514:9: error: unknown type name ‘Py_UCS2’; did you mean ‘Py_UCS4’?
+     9514 |         Py_UCS2 c = ((Py_UCS2*)buffer)[i];
+          |         ^~~~~~~
+          |         Py_UCS4
+    regex_3/_regex.c:9514:23: error: ‘Py_UCS2’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     9514 |         Py_UCS2 c = ((Py_UCS2*)buffer)[i];
+          |                       ^~~~~~~
+          |                       Py_UCS4
+    regex_3/_regex.c:9514:31: error: expected expression before ‘)’ token
+     9514 |         Py_UCS2 c = ((Py_UCS2*)buffer)[i];
+          |                               ^
+    regex_3/_regex.c:9518:27: error: ‘Py_UCS1’ undeclared (first use in this function); did you mean ‘Py_UCS4’?
+     9518 |         byte_buffer[i] = (Py_UCS1)c;
+          |                           ^~~~~~~
+          |                           Py_UCS4
+    regex_3/_regex.c:9518:35: error: expected ‘;’ before ‘c’
+     9518 |         byte_buffer[i] = (Py_UCS1)c;
+          |                                   ^
+          |                                   ;
+    regex_3/_regex.c: In function ‘get_string’:
+    regex_3/_regex.c:18037:13: warning: implicit declaration of function ‘PyUnicode_READY’; did you mean ‘PyUnicode_Check’? [-Wimplicit-function-declaration]
+    18037 |         if (PyUnicode_READY(string) == -1)
+          |             ^~~~~~~~~~~~~~~
+          |             PyUnicode_Check
+    regex_3/_regex.c:18040:39: warning: implicit declaration of function ‘PyUnicode_DATA’; did you mean ‘PyUnicode_AS_DATA’? [-Wimplicit-function-declaration]
+    18040 |         str_info->characters = (void*)PyUnicode_DATA(string);
+          |                                       ^~~~~~~~~~~~~~
+          |                                       PyUnicode_AS_DATA
+    regex_3/_regex.c:18040:32: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+    18040 |         str_info->characters = (void*)PyUnicode_DATA(string);
+          |                                ^
+    regex_3/_regex.c:18041:28: warning: implicit declaration of function ‘PyUnicode_GET_LENGTH’; did you mean ‘PyUnicode_GET_SIZE’? [-Wimplicit-function-declaration]
+    18041 |         str_info->length = PyUnicode_GET_LENGTH(string);
+          |                            ^~~~~~~~~~~~~~~~~~~~
+          |                            PyUnicode_GET_SIZE
+    regex_3/_regex.c:18042:30: warning: implicit declaration of function ‘PyUnicode_KIND’; did you mean ‘PyUnicode_Join’? [-Wimplicit-function-declaration]
+    18042 |         str_info->charsize = PyUnicode_KIND(string);
+          |                              ^~~~~~~~~~~~~~
+          |                              PyUnicode_Join
+    regex_3/_regex.c: In function ‘ensure_immutable’:
+    regex_3/_regex.c:18557:22: warning: implicit declaration of function ‘PyBytes_FromObject’; did you mean ‘PyBuffer_FromObject’? [-Wimplicit-function-declaration]
+    18557 |         new_string = PyBytes_FromObject(string);
+          |                      ^~~~~~~~~~~~~~~~~~
+          |                      PyBuffer_FromObject
+    regex_3/_regex.c:18557:20: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+    18557 |         new_string = PyBytes_FromObject(string);
+          |                    ^
+    regex_3/_regex.c: In function ‘unicode_slice’:
+    regex_3/_regex.c:18585:12: warning: implicit declaration of function ‘PyUnicode_Substring’; did you mean ‘PyUnicode_FromString’? [-Wimplicit-function-declaration]
+    18585 |     return PyUnicode_Substring(string, start, end);
+          |            ^~~~~~~~~~~~~~~~~~~
+          |            PyUnicode_FromString
+    regex_3/_regex.c:18585:12: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+    18585 |     return PyUnicode_Substring(string, start, end);
+          |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    regex_3/_regex.c: In function ‘add_to_join_list’:
+    regex_3/_regex.c:19408:22: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+    19408 |             new_item = PyBytes_FromObject(item);
+          |                      ^
+    regex_3/_regex.c: In function ‘join_list_info’:
+    regex_3/_regex.c:19475:22: warning: implicit declaration of function ‘PyUnicode_New’; did you mean ‘PyCode_New’? [-Wimplicit-function-declaration]
+    19475 |             joiner = PyUnicode_New(0, 0);
+          |                      ^~~~~~~~~~~~~
+          |                      PyCode_New
+    regex_3/_regex.c:19475:20: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+    19475 |             joiner = PyUnicode_New(0, 0);
+          |                    ^
+    regex_3/_regex.c:19505:16: warning: returning ‘int’ from a function with return type ‘PyObject *’ {aka ‘struct _object *’} makes pointer from integer without a cast [-Wint-conversion]
+    19505 |         return PyUnicode_New(0, 0);
+          |                ^~~~~~~~~~~~~~~~~~~
+    regex_3/_regex.c: In function ‘match_get_group_slice’:
+    regex_3/_regex.c:19809:30: warning: passing argument 1 of ‘PySlice_GetIndicesEx’ from incompatible pointer type [-Wincompatible-pointer-types]
+    19809 |     if (PySlice_GetIndicesEx(slice, (Py_ssize_t)self->group_count + 1, &start,
+          |                              ^~~~~
+          |                              |
+          |                              PyObject * {aka struct _object *}
+    In file included from /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/include/python2.7/Python.h:115,
+                     from regex_3/_regex.c:50:
+    /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/include/python2.7/sliceobject.h:37:53: note: expected ‘PySliceObject *’ {aka ‘struct <anonymous> *’} but argument is of type ‘PyObject *’ {aka ‘struct _object *’}
+       37 | PyAPI_FUNC(int) PySlice_GetIndicesEx(PySliceObject *r, Py_ssize_t length,
+          |                                      ~~~~~~~~~~~~~~~^
+    regex_3/_regex.c: In function ‘index_to_integer’:
+    regex_3/_regex.c:21024:19: warning: implicit declaration of function ‘PyLong_FromUnicodeObject’; did you mean ‘PyLong_FromUnicode’? [-Wimplicit-function-declaration]
+    21024 |         int_obj = PyLong_FromUnicodeObject(item, 0);
+          |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+          |                   PyLong_FromUnicode
+    regex_3/_regex.c:21024:17: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+    21024 |         int_obj = PyLong_FromUnicodeObject(item, 0);
+          |                 ^
+    regex_3/_regex.c: In function ‘pattern_sizeof’:
+    regex_3/_regex.c:22280:13: warning: implicit declaration of function ‘PyLong_AsSize_t’; did you mean ‘PyLong_AsSsize_t’? [-Wimplicit-function-declaration]
+    22280 |     size += PyLong_AsSize_t(result);
+          |             ^~~~~~~~~~~~~~~
+          |             PyLong_AsSsize_t
+    regex_3/_regex.c: At top level:
+    regex_3/_regex.c:26217:15: error: variable ‘regex_module’ has initializer but incomplete type
+    26217 | static struct PyModuleDef regex_module = {
+          |               ^~~~~~~~~~~
+    regex_3/_regex.c:26218:5: error: ‘PyModuleDef_HEAD_INIT’ undeclared here (not in a function)
+    26218 |     PyModuleDef_HEAD_INIT,
+          |     ^~~~~~~~~~~~~~~~~~~~~
+    regex_3/_regex.c:26218:5: warning: excess elements in struct initializer
+    regex_3/_regex.c:26218:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c:26219:5: warning: excess elements in struct initializer
+    26219 |     "_regex",
+          |     ^~~~~~~~
+    regex_3/_regex.c:26219:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c:26220:5: warning: excess elements in struct initializer
+    26220 |     NULL,
+          |     ^~~~
+    regex_3/_regex.c:26220:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c:26221:5: warning: excess elements in struct initializer
+    26221 |     -1,
+          |     ^
+    regex_3/_regex.c:26221:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c:26222:5: warning: excess elements in struct initializer
+    26222 |     _functions,
+          |     ^~~~~~~~~~
+    regex_3/_regex.c:26222:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c:26223:5: warning: excess elements in struct initializer
+    26223 |     NULL,
+          |     ^~~~
+    regex_3/_regex.c:26223:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c:26224:5: warning: excess elements in struct initializer
+    26224 |     NULL,
+          |     ^~~~
+    regex_3/_regex.c:26224:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c:26225:5: warning: excess elements in struct initializer
+    26225 |     NULL,
+          |     ^~~~
+    regex_3/_regex.c:26225:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c:26226:5: warning: excess elements in struct initializer
+    26226 |     NULL
+          |     ^~~~
+    regex_3/_regex.c:26226:5: note: (near initialization for ‘regex_module’)
+    regex_3/_regex.c: In function ‘PyInit__regex’:
+    regex_3/_regex.c:26287:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+    26287 |         return NULL;
+          |                ^~~~
+    regex_3/_regex.c:26230:16: note: declared here
+    26230 | PyMODINIT_FUNC PyInit__regex(void) {
+          |                ^~~~~~~~~~~~~
+    regex_3/_regex.c:26289:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+    26289 |         return NULL;
+          |                ^~~~
+    regex_3/_regex.c:26230:16: note: declared here
+    26230 | PyMODINIT_FUNC PyInit__regex(void) {
+          |                ^~~~~~~~~~~~~
+    regex_3/_regex.c:26291:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+    26291 |         return NULL;
+          |                ^~~~
+    regex_3/_regex.c:26230:16: note: declared here
+    26230 | PyMODINIT_FUNC PyInit__regex(void) {
+          |                ^~~~~~~~~~~~~
+    regex_3/_regex.c:26293:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+    26293 |         return NULL;
+          |                ^~~~
+    regex_3/_regex.c:26230:16: note: declared here
+    26230 | PyMODINIT_FUNC PyInit__regex(void) {
+          |                ^~~~~~~~~~~~~
+    regex_3/_regex.c:26295:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+    26295 |         return NULL;
+          |                ^~~~
+    regex_3/_regex.c:26230:16: note: declared here
+    26230 | PyMODINIT_FUNC PyInit__regex(void) {
+          |                ^~~~~~~~~~~~~
+    regex_3/_regex.c:26299:9: warning: implicit declaration of function ‘PyModule_Create’; did you mean ‘PyModule_Check’? [-Wimplicit-function-declaration]
+    26299 |     m = PyModule_Create(&regex_module);
+          |         ^~~~~~~~~~~~~~~
+          |         PyModule_Check
+    regex_3/_regex.c:26299:7: warning: assignment to ‘PyObject *’ {aka ‘struct _object *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+    26299 |     m = PyModule_Create(&regex_module);
+          |       ^
+    regex_3/_regex.c:26301:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+    26301 |         return NULL;
+          |                ^~~~
+    regex_3/_regex.c:26230:16: note: declared here
+    26230 | PyMODINIT_FUNC PyInit__regex(void) {
+          |                ^~~~~~~~~~~~~
+    regex_3/_regex.c:26326:16: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+    26326 |         return NULL;
+          |                ^~~~
+    regex_3/_regex.c:26230:16: note: declared here
+    26230 | PyMODINIT_FUNC PyInit__regex(void) {
+          |                ^~~~~~~~~~~~~
+    regex_3/_regex.c:26329:12: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+    26329 |     return m;
+          |            ^
+    regex_3/_regex.c:26230:16: note: declared here
+    26230 | PyMODINIT_FUNC PyInit__regex(void) {
+          |                ^~~~~~~~~~~~~
+    regex_3/_regex.c: At top level:
+    regex_3/_regex.c:26217:27: error: storage size of ‘regex_module’ isn’t known
+    26217 | static struct PyModuleDef regex_module = {
+          |                           ^~~~~~~~~~~~
+    regex_3/_regex.c: In function ‘bytes2_char_at’:
+    regex_3/_regex.c:771:1: warning: control reaches end of non-void function [-Wreturn-type]
+      771 | }
+          | ^
+    regex_3/_regex.c: In function ‘bytes1_char_at’:
+    regex_3/_regex.c:756:1: warning: control reaches end of non-void function [-Wreturn-type]
+      756 | }
+          | ^
+    regex_3/_regex.c: In function ‘bytes2_point_to’:
+    regex_3/_regex.c:781:1: warning: control reaches end of non-void function [-Wreturn-type]
+      781 | }
+          | ^
+    regex_3/_regex.c: In function ‘bytes1_point_to’:
+    regex_3/_regex.c:766:1: warning: control reaches end of non-void function [-Wreturn-type]
+      766 | }
+          | ^
+    error: command 'gcc' failed with exit status 1
+    ----------------------------------------[0m
+[31mERROR: Command errored out with exit status 1: /mnt/c17e104c-58c7-47bb-8cf2-3752068b9c33/anaconda3/envs/py2/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-G3UevC/regex/setup.py'"'"'; __file__='"'"'/tmp/pip-install-G3UevC/regex/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-1uzV_R/install-record.txt --single-version-externally-managed --compile Check the logs for full command output.[0m
+[?25h(py2) ]0;jack@jack-desktop: ~/Desktop/ChatterBot-Stuff[01;32mjack@jack-desktop[00m:[01;34m~/Desktop/ChatterBot-Stuff[00m$ thunar
+(py2) ]0;jack@jack-desktop: ~/Desktop/ChatterBot-Stuff[01;32mjack@jack-desktop[00m:[01;34m~/Desktop/ChatterBot-Stuff[00m$ pip install "regex<2022.1.18"
+[33mDEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support[0m
+Collecting regex<2022.1.18
+[?25l  Downloading https://files.pythonhosted.org/packages/97/cd/93ad08b2f97ec95da0bd860380ce0ac7481eaccc760356ee11eda369c048/regex-2021.11.10.tar.gz (702kB)
+[K     |▌                               | 10kB 405kB/s eta 0:00:02[K     |█                               | 20kB 599kB/s eta 0:00:02[K     |█▍                              | 30kB 437kB/s eta 0:00:02[K     |█▉                              | 40kB 413kB/s eta 0:00:02[K     |██▎                             | 51kB 458kB/s eta 0:00:02[K     |██▉                             | 61kB 547kB/s eta 0:00:02[K     |███▎                            | 71kB 606kB/s eta 0:00:02[K     |███▊                            | 81kB 691kB/s eta 0:00:01[K     |████▏                           | 92kB 708kB/s eta 0:00:01[K     |████▋                           | 102kB 704kB/s eta 0:00:01[K     |█████▏                          | 112kB 704kB/s eta 0:00:01[K     |█████▋                          | 122kB 704kB/s eta 0:00:01[K     |██████                          | 133kB 704kB/s eta 0:00:01[K     |██████▌                         | 143kB 704kB/s eta 0:00:01[K     |███████                         | 153kB 704kB/s eta 0:00:01[K     |███████▌                        | 163kB 704kB/s eta 0:00:01[K     |████████                        | 174kB 704kB/s eta 0:00:01[K     |████████▍                       | 184kB 704kB/s eta 0:00:01[K     |████████▉                       | 194kB 704kB/s eta 0:00:01[K     |█████████▎                      | 204kB 704kB/s eta 0:00:01[K     |█████████▉                      | 215kB 704kB/s eta 0:00:01[K     |██████████▎                     | 225kB 704kB/s eta 0:00:01[K     |██████████▊                     | 235kB 704kB/s eta 0:00:01[K     |███████████▏                    | 245kB 704kB/s eta 0:00:01[K     |███████████▋                    | 256kB 704kB/s eta 0:00:01[K     |████████████▏                   | 266kB 704kB/s eta 0:00:01[K     |████████████▋                   | 276kB 704kB/s eta 0:00:01[K     |█████████████                   | 286kB 704kB/s eta 0:00:01[K     |█████████████▌                  | 296kB 704kB/s eta 0:00:01[K     |██████████████                  | 307kB 704kB/s eta 0:00:01[K     |██████████████▌                 | 317kB 704kB/s eta 0:00:01[K     |███████████████                 | 327kB 704kB/s eta 0:00:01[K     |███████████████▍                | 337kB 704kB/s eta 0:00:01[K     |███████████████▉                | 348kB 704kB/s eta 0:00:01[K     |████████████████▎               | 358kB 704kB/s eta 0:00:01[K     |████████████████▉               | 368kB 704kB/s eta 0:00:01[K     |█████████████████▎              | 378kB 704kB/s eta 0:00:01[K     |█████████████████▊              | 389kB 704kB/s eta 0:00:01[K     |██████████████████▏             | 399kB 704kB/s eta 0:00:01[K     |██████████████████▋             | 409kB 704kB/s eta 0:00:01[K     |███████████████████▏            | 419kB 704kB/s eta 0:00:01[K     |███████████████████▋            | 430kB 704kB/s eta 0:00:01[K     |████████████████████            | 440kB 704kB/s eta 0:00:01[K     |████████████████████▌           | 450kB 704kB/s eta 0:00:01[K     |█████████████████████           | 460kB 704kB/s eta 0:00:01[K     |█████████████████████▌          | 471kB 704kB/s eta 0:00:01[K     |██████████████████████          | 481kB 704kB/s eta 0:00:01[K     |██████████████████████▍         | 491kB 704kB/s eta 0:00:01[K     |██████████████████████▉         | 501kB 704kB/s eta 0:00:01[K     |███████████████████████▎        | 512kB 704kB/s eta 0:00:01[K     |███████████████████████▉        | 522kB 704kB/s eta 0:00:01[K     |████████████████████████▎       | 532kB 704kB/s eta 0:00:01[K     |████████████████████████▊       | 542kB 704kB/s eta 0:00:01[K     |█████████████████████████▏      | 552kB 704kB/s eta 0:00:01[K     |█████████████████████████▋      | 563kB 704kB/s eta 0:00:01[K     |██████████████████████████      | 573kB 704kB/s eta 0:00:01[K     |██████████████████████████▋     | 583kB 704kB/s eta 0:00:01[K     |███████████████████████████     | 593kB 704kB/s eta 0:00:01[K     |███████████████████████████▌    | 604kB 704kB/s eta 0:00:01[K     |████████████████████████████    | 614kB 704kB/s eta 0:00:01[K     |████████████████████████████▍   | 624kB 704kB/s eta 0:00:01[K     |█████████████████████████████   | 634kB 704kB/s eta 0:00:01[K     |█████████████████████████████▍  | 645kB 704kB/s eta 0:00:01[K     |█████████████████████████████▉  | 655kB 704kB/s eta 0:00:01[K     |██████████████████████████████▎ | 665kB 704kB/s eta 0:00:01[K     |██████████████████████████████▊ | 675kB 704kB/s eta 0:00:01[K     |███████████████████████████████▎| 686kB 704kB/s eta 0:00:01[K     |███████████████████████████████▊| 696kB 704kB/s eta 0:00:01[K     |████████████████████████████████| 706kB 704kB/s 
+[?25hBuilding wheels for collected packages: regex
+  Building wheel for regex (setup.py) ... [?25l- \ | / done
+[?25h  Created wheel for regex: filename=regex-2021.11.10-cp27-cp27mu-linux_x86_64.whl size=672053 sha256=f7baf

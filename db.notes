@@ -1,0 +1,19 @@
+db.statements.find({"text": /.*language.*/}).pretty().limit(2)
+
+
+
+
+db.statements.aggregate([
+    {$group: {
+        _id: {
+          text: "$text",
+          search_in_response_to: "$search_in_response_to"
+        },
+        id_List: { $push: "$_id" },
+        count: { $sum: 1 } } } ])
+
+
+db.statements.aggregate(
+  { $sort : { headline : 1 } }
+);
+db.statments.find({"text": /.*Grand.*/})
